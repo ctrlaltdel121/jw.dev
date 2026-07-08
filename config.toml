@@ -4,9 +4,12 @@ languageCode = "en"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "section"]
 
 [params]
-  name       = "JW"
+  name       = "Jeremy Williams"
   initials   = "JW"
-  tagline    = "Software Developer"
+  tagline    = "Platform Architect"
+  gravatarEmail = "ctrlaltdel121@gmail.com"
+  about      = "Building mission-critical platforms with over a decade of experience. I specialize in Go, Linux, and cloud native technologies, focusing on accelerating the code-to-value lifecycle and crafting rock-solid, AI-native developer tooling."
+
 
   [[params.links]]
     label = "GitHub"
@@ -14,12 +17,8 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "secti
 
   [[params.links]]
     label = "LinkedIn"
-    url   = "https://linkedin.com/in/your-username"  # TODO: replace with your LinkedIn username
-
-  [[params.links]]
-    label = "Twitter / X"
-    url   = "https://x.com/your-handle"  # TODO: replace with your Twitter/X handle
+    url   = "https://linkedin.com/in/jwilliams121"
 
   [[params.links]]
     label = "Email"
-    url   = "mailto:hello@jw.dev"
+    url   = "mailto:me@jw.dev"
