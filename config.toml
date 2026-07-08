@@ -14,11 +14,11 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "secti
 
   [[params.links]]
     label = "LinkedIn"
-    url   = "https://linkedin.com/in/"
+    url   = "https://linkedin.com/in/your-username"  # TODO: replace with your LinkedIn username
 
   [[params.links]]
     label = "Twitter / X"
-    url   = "https://x.com/"
+    url   = "https://x.com/your-handle"  # TODO: replace with your Twitter/X handle
 
   [[params.links]]
     label = "Email"
