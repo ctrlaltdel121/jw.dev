@@ -7,7 +7,7 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "secti
   name       = "Jeremy Williams"
   initials   = "JW"
   tagline    = "Platform Architect"
-  gravatarEmail = "ctrlaltdel121@gmail.com"
+  avatar     = "headshot.jpg"
   about      = "Building mission-critical platforms with over a decade of experience. I specialize in Go, Linux, and cloud native technologies, focusing on accelerating the code-to-value lifecycle and crafting rock-solid, AI-native developer tooling."
 
 

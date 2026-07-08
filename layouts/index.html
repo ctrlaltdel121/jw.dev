@@ -27,11 +27,17 @@
 <body>
   <main class="container">
     <div class="profile">
-      {{ if .Site.Params.gravatarEmail }}
-      <img class="avatar" src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatarEmail }}?s=160" alt="{{ .Site.Params.name | default .Site.Title }}" />
-      {{ else }}
-      <div class="avatar">{{ .Site.Params.initials | default "JW" }}</div>
-      {{ end }}
+      <div class="avatar-ring">
+        <div class="avatar-crop">
+          {{ if .Site.Params.avatar }}
+          <img class="avatar-image" src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Params.name | default .Site.Title }}" />
+          {{ else if .Site.Params.gravatarEmail }}
+          <img class="avatar-image" src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatarEmail }}?s=160" alt="{{ .Site.Params.name | default .Site.Title }}" />
+          {{ else }}
+          <div class="avatar-image">{{ .Site.Params.initials | default "JW" }}</div>
+          {{ end }}
+        </div>
+      </div>
       <h1 class="name">{{ .Site.Params.name | default .Site.Title }}</h1>
       <p class="tagline">{{ .Site.Params.tagline }}</p>
       {{ with .Site.Params.about }}
