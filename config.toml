@@ -1,58 +1,24 @@
-theme = "beautifulhugo"
-relativeURLs = true
 baseURL = "/"
-title = "Hugo Themes"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+title = "jw.dev"
 languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-ignoreLogs = ['warning-goldmark-raw-html']
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404", "section"]
 
-[pagination]
-  paperSize = 3
+[params]
+  name       = "Jeremy Williams"
+  initials   = "JW"
+  tagline    = "Platform Architect"
+  gravatarEmail = "ctrlaltdel121@gmail.com"
+  about      = "Building mission-critical platforms with over a decade of experience. I specialize in Go, Linux, and cloud native technologies, focusing on accelerating the code-to-value lifecycle and crafting rock-solid, AI-native developer tooling."
 
-[menu]
 
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+  [[params.links]]
+    label = "GitHub"
+    url   = "https://github.com/ctrlaltdel121"
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  [[params.links]]
+    label = "LinkedIn"
+    url   = "https://linkedin.com/in/jwilliams121"
 
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.x]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.x]
-    disableInlineCSS = true
+  [[params.links]]
+    label = "Email"
+    url   = "mailto:me@jw.dev"
