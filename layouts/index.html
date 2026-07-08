@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+</head>
+<body>
+  <main class="container">
+    <div class="profile">
+      <div class="avatar">{{ .Site.Params.initials | default "JW" }}</div>
+      <h1 class="name">{{ .Site.Params.name | default .Site.Title }}</h1>
+      <p class="tagline">{{ .Site.Params.tagline }}</p>
+      <nav class="links" aria-label="Social links">
+        {{ range .Site.Params.links }}
+        <a
+          href="{{ .url }}"
+          class="link-card"
+          {{ if not (hasPrefix .url "mailto:") }}target="_blank" rel="noopener noreferrer"{{ end }}
+        >{{ .label }}</a>
+        {{ end }}
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
